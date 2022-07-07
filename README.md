@@ -1,3 +1,7 @@
+# Cloned from [dabealu](https://github.com/dabealu/zookeeper-exporter)
+
+Original repo was no longer undergoing maintenance, and there are some changes that we required for this exporter to run properly on our newest zookeeper clusters. We will continue to pull in new PR's as needed.
+
 ### Prometheus zookeeper exporter
 
 Exports `mntr` zookeeper's stats in prometheus format.

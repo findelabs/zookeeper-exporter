@@ -1,6 +1,8 @@
 FROM        golang:1.14-alpine as builder
 WORKDIR     /usr/src/zookeeper-exporter
 COPY        . /usr/src/zookeeper-exporter
+RUN         apk update && apk add git
+RUN         go get github.com/shopspring/decimal
 RUN         go build -v 
 
 FROM        alpine:3.11
